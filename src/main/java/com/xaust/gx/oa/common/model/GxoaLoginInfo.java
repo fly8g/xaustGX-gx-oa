@@ -6,14 +6,20 @@ public class GxoaLoginInfo implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	private String userId;
 	private String username;
 	private String password;
-	private String email;
-	private String familyNm;
 	private String userTpye;
-	private String roleId;
+	private String lastLoginDt;
 	private String deptCd;
+	private String email;
 
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 	public String getUsername() {
 		return username;
 	}
@@ -32,23 +38,17 @@ public class GxoaLoginInfo implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getFamilyNm() {
-		return familyNm;
-	}
-	public void setFamilyNm(String familyNm) {
-		this.familyNm = familyNm;
-	}
 	public String getUserTpye() {
 		return userTpye;
 	}
 	public void setUserTpye(String userTpye) {
 		this.userTpye = userTpye;
 	}
-	public String getRoleId() {
-		return roleId;
+	public String getLastLoginDt() {
+		return lastLoginDt;
 	}
-	public void setRoleId(String roleId) {
-		this.roleId = roleId;
+	public void setLastLoginDt(String lastLoginDt) {
+		this.lastLoginDt = lastLoginDt;
 	}
 	public String getDeptCd() {
 		return deptCd;

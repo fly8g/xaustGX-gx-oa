@@ -11,6 +11,7 @@
 <h1>Welcome To Struts 2!</h1>
 
 <p><a href='<s:url action="edit" />' >Edit your information</a></p>
+<p><a href='<s:url action="APP0010" />' >login</a></p>
 
 </body>
 </html>
