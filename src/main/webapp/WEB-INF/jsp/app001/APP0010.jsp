@@ -5,7 +5,7 @@
 <head>
 <s:head />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title><s:text name="APP0010.title" /></title>
+<title><s:text name="APP0010.title" /></title>
 </head>
 <body>
 <s:form>

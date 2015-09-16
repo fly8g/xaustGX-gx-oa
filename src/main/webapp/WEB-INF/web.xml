@@ -13,6 +13,13 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:applicationContext.xml</param-value>
 	</context-param>
+
+	<!-- Tiles Setting File -->
+	<context-param>
+		<param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>
+		<param-value>/WEB-INF/classes/tiles.xml</param-value>
+		<!-- <param-value>classpath:tiles.xml</param-value> -->
+	</context-param>
 	
 	<!-- Char encoding -->
 <!-- 	<filter>
@@ -44,6 +51,12 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
+	<!-- Tiles Setting -->
+	<listener>
+		<listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
+	</listener>
+
+	<!-- Spring Setting -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>

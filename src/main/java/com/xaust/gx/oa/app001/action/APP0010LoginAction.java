@@ -18,7 +18,8 @@ import com.xaust.gx.oa.common.model.GxoaLoginInfo;
 @Action("APP0010")
 @Results({
 	@Result(name = com.opensymphony.xwork2.Action.LOGIN,
-			location = "/WEB-INF/jsp/app001/APP0010.jsp"),
+			type = "tiles",
+			location = "APP0010"),
 	@Result(name = com.opensymphony.xwork2.Action.SUCCESS,
 			type = "chain",
 			location = "index"),

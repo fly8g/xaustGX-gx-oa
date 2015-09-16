@@ -10,7 +10,12 @@
 	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
 	<constant name="struts.custom.i18n.resources" value="codes,dispItems,messages" />
 
-	<package name="basic" extends="struts-default">
+    <package name="basic" extends="struts-default">
+
+        <!-- 共通result-type -->
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+        </result-types>
 
         <!-- If no class attribute is specified the framework will assume success and 
         render the result index.jsp -->
