@@ -24,8 +24,10 @@ import com.xaust.gx.oa.common.model.GxoaLoginInfo;
 			type = "chain",
 			location = "index"),
 	@Result(name = com.opensymphony.xwork2.Action.INPUT,
-			type = "dispatcher",
-			location = "/WEB-INF/jsp/app001/APP0010.jsp")
+//			type = "dispatcher",
+//			location = "/WEB-INF/jsp/app001/APP0010.jsp")
+			type = "tiles",
+			location = "APP0010")
 }) 
 public class APP0010LoginAction extends GxoaCommonSupport {
 	
