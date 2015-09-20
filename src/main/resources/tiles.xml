@@ -9,8 +9,8 @@
     <!-- base画面 -->
     <definition name="base" template="/WEB-INF/jsp/commons/base.jsp">
         <put-attribute name="window_title_key" value="application.title" />
-        <put-attribute name="disp_common_js" value="/WEB-INF/js/commons/commons.js" />
-        <put-attribute name="disp_common_css" value="/WEB-INF/css/commons/commons.css" />
+        <put-attribute name="disp_common_js" value="/js/commons/commons.js" />
+        <put-attribute name="disp_common_css" value="/css/commons/commons.css" />
     </definition>
 
     <!-- 共通Head JSP -->

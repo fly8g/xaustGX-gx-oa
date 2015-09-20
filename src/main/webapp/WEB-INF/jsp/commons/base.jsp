@@ -77,6 +77,8 @@
 <%-- 共通Head JSP定义区域 --%>
 <tiles:insertDefinition name="commonHeader"/>
 
+<%-- 共通Message JSP定义区域 --%>
+<tiles:insertDefinition name="commonMessager"/>
 <!-- <div id="content"> -->
 
 <%-- 各画面JSP定义区域  --%>
@@ -87,8 +89,6 @@
 <tiles:insertDefinition name="commonHiddenArea"/>
 
 
-<%-- 共通Message JSP定义区域 --%>
-<tiles:insertDefinition name="commonMessager"/>
 
 
 <%-- 共通Foot JSP定义区域 --%>

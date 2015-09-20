@@ -9,6 +9,18 @@
 .text-muted {
   margin: 20px 0;
 }
+.jumbotron-msg {
+  padding-top: 58px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.jumbotron-contents {
+  padding: 0px 0px;
+}
+body {
+  background-color: #eeeeee;
+}
 /* body,p {
   font-family: "Varela Round",sans-serif;
   font-weight: 400;

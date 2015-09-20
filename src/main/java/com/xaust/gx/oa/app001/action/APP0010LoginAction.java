@@ -41,7 +41,6 @@ public class APP0010LoginAction extends GxoaCommonSupport {
 		String sesConfirmCd = (String)session.get(SESSION_KEY_CONFIRM_CD);
 		if(!StringUtils.equals(sesConfirmCd, confirmCd)) {
 			addFieldError("confirmCd", getText("E01000"));
-			addFieldError("loginInfo.username", "loginInfo.username xxxx");
 		}
 	}
 	public String login() {
