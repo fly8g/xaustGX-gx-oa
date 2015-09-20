@@ -24,8 +24,6 @@ import com.xaust.gx.oa.common.model.GxoaLoginInfo;
 			type = "chain",
 			location = "index"),
 	@Result(name = com.opensymphony.xwork2.Action.INPUT,
-//			type = "dispatcher",
-//			location = "/WEB-INF/jsp/app001/APP0010.jsp")
 			type = "tiles",
 			location = "APP0010")
 }) 
@@ -43,6 +41,7 @@ public class APP0010LoginAction extends GxoaCommonSupport {
 		String sesConfirmCd = (String)session.get(SESSION_KEY_CONFIRM_CD);
 		if(!StringUtils.equals(sesConfirmCd, confirmCd)) {
 			addFieldError("confirmCd", getText("E01000"));
+			addFieldError("loginInfo.username", "loginInfo.username xxxx");
 		}
 	}
 	public String login() {
@@ -63,9 +62,12 @@ public class APP0010LoginAction extends GxoaCommonSupport {
 	public List<State> getUserType() {
 		
 		userType = new ArrayList<State>();
-		userType.add(new State("0", getText("userType.0")));
-		userType.add(new State("1", getText("userType.1")));
-		userType.add(new State("9", getText("userType.9")) );
+		userType.add(new State("0", "系统管理员"));
+		userType.add(new State("1", "部门管理员"));
+		userType.add(new State("9", "普通用户"));
+//		userType.add(new State("0", getText("userType.0")));
+//		userType.add(new State("1", getText("userType.1")));
+//		userType.add(new State("9", getText("userType.9")));
 		
 		return userType;
 	}

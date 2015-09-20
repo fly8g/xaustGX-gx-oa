@@ -1,0 +1,46 @@
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.text-muted {
+  margin: 20px 0;
+}
+/* body,p {
+  font-family: "Varela Round",sans-serif;
+  font-weight: 400;
+  color: #34302d;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+} */
+/*  body,html {
+margin: 0;
+padding: 0;
+font: 12px/1.5 arial;
+height:100%;
+}
+#content {
+min-height:100%;
+position: relative;
+}
+#main {
+padding: 1px;
+padding-bottom: 60px;  
+}
+#footer {
+position: absolute;
+bottom: 0;
+padding: 10px 0;
+background-color: #AAA;
+width: 100%;
+}
+#footer h1 {
+font: 20px/2 Arial;
+margin:0;
+padding:0 10px;
+} */

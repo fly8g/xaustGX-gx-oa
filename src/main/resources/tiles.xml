@@ -15,6 +15,9 @@
 
     <!-- 共通Head JSP -->
     <definition name="commonHeader" template="/WEB-INF/jsp/commons/header.jsp" />
+
+    <!-- 共通Message JSP -->
+    <definition name="commonMessager" template="/WEB-INF/jsp/commons/messager.jsp" />
     
     <!-- 共通Foot JSP -->
     <definition name="commonFooter" template="/WEB-INF/jsp/commons/footer.jsp" />
@@ -26,7 +29,7 @@
     <definition name="APP0010" extends="base">
         <put-attribute name="disp_title_key" value="APP0010.title" />
         <put-attribute name="disp_js" value="/WEB-INF/js/app001/APP0010.js" />
-        <put-attribute name="disp_css" value="/WEB-INF/css/app001/APP0010.css" />
+        <put-attribute name="disp_css" value="/css/app001/APP0010.css" />
         <put-attribute name="body" value="/WEB-INF/jsp/app001/APP0010.jsp" />
     </definition>
     <!-- =================================================================== -->

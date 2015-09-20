@@ -6,6 +6,7 @@
 <struts>
 
 	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple" />
 	<constant name="struts.convention.result.path" value="" />
 	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
 	<constant name="struts.custom.i18n.resources" value="codes,dispItems,messages" />
@@ -17,12 +18,20 @@
             <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
         </result-types>
 
+        <interceptors>
+            <interceptor-stack name="frameworkStack">
+	            <interceptor-ref name="logger"/>
+	            <interceptor-ref name="defaultStack"/>
+	        </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="frameworkStack" />
+
         <!-- If no class attribute is specified the framework will assume success and 
         render the result index.jsp -->
         <!-- If no name value for the result node is specified the success value is the default -->
-<!-- 		<action name="index">
+		<action name="index">
 			<result>/index.jsp</result>
-		</action> -->
+		</action>
 
 	    <action name="edit" class="org.apache.struts.edit.action.EditAction" method="input">
 	    	<result name="input">/edit.jsp</result>

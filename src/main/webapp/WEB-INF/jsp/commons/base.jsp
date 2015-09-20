@@ -1,15 +1,16 @@
 <%-- 共通JSP --%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML>
 <%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<html>
+<html lang="zh-cn">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <%-- HTML title定义区域 --%>
 <s:set var="window_title_key">
@@ -62,22 +63,36 @@
 <link rel="stylesheet" href="${disp_common_css_url}" type="text/css" />
 <link rel="stylesheet" href="${disp_css_url}" type="text/css" />
 
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
 
 <%-- 共通Head JSP定义区域 --%>
 <tiles:insertDefinition name="commonHeader"/>
 
+<!-- <div id="content"> -->
 
 <%-- 各画面JSP定义区域  --%>
-<div id="content_body" class="container-fluid">
-	<tiles:insertAttribute name="body" />
-</div>
+<tiles:insertAttribute name="body" />
 
 
 <%-- 共通隐藏项目JSP定义区域 --%>
 <tiles:insertDefinition name="commonHiddenArea"/>
 
 
+<%-- 共通Message JSP定义区域 --%>
+<tiles:insertDefinition name="commonMessager"/>
+
+
 <%-- 共通Foot JSP定义区域 --%>
 <tiles:insertDefinition name="commonFooter"/>
+<!-- </div> -->
 </body>
 </html>

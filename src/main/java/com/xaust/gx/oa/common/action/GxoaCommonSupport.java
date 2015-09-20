@@ -13,7 +13,9 @@ import com.opensymphony.xwork2.ActionSupport;
 @ParentPackage("basic")
 public class GxoaCommonSupport extends ActionSupport implements SessionAware {
 
-    public final String SESSION_KEY_CONFIRM_CD = this.getClass().getName() + "SESSION_KEY_CONFIRM_CD";
+	private static final long serialVersionUID = 1L;
+
+    public final String SESSION_KEY_CONFIRM_CD = GxoaCommonSupport.class.getCanonicalName() + ".SESSION_KEY_CONFIRM_CD";
 
 	public Map<String, Object> session;
 
