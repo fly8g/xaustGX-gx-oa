@@ -22,7 +22,7 @@ import com.xaust.gx.oa.common.model.GxoaLoginInfo;
 			location = "APP0010"),
 	@Result(name = com.opensymphony.xwork2.Action.SUCCESS,
 			type = "chain",
-			location = "index"),
+			location = "APP0010"),
 	@Result(name = com.opensymphony.xwork2.Action.INPUT,
 			type = "tiles",
 			location = "APP0010")
@@ -44,6 +44,7 @@ public class APP0010LoginAction extends GxoaCommonSupport {
 		}
 	}
 	public String login() {
+		session.put("loginInfo", loginInfo);
 		return SUCCESS;
 	}
 	public String execute() {

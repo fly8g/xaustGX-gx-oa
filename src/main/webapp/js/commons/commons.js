@@ -8,7 +8,8 @@ function reloadMessage() {
 	var hidMsg = $("#hidden_message");
 	disMsg.empty();
 	if (getMessageCount() > 0) {
-		var closeTag = '<a class="close" href="#" data-dismiss="alert">x</a>';
+		//var closeTag = '<a class="close" href="#" data-dismiss="alert">x</a>';
+		var closeTag = '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 		disMsg.addClass("alert alert-danger");
 		disMsg.html(closeTag + hidMsg.html());
 		changeErrorFieldBackground();

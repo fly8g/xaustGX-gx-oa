@@ -17,6 +17,8 @@ public class GxoaCommonSupport extends ActionSupport implements SessionAware {
 
     public final String SESSION_KEY_CONFIRM_CD = GxoaCommonSupport.class.getCanonicalName() + ".SESSION_KEY_CONFIRM_CD";
 
+    public final String SESSION_KEY_LOGIN_INFO = GxoaCommonSupport.class.getCanonicalName() + ".SESSION_KEY_LOGIN_INFO";
+
 	public Map<String, Object> session;
 
 	@Override
