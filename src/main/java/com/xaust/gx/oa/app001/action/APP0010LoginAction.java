@@ -33,7 +33,7 @@ public class APP0010LoginAction extends GxoaCommonSupport {
 	
 	private GxoaLoginInfo loginInfo;
 	
-	private List<State> userType ;
+	private List<State> userTypeList ;
 	
 	private String confirmCd ;
 
@@ -59,17 +59,17 @@ public class APP0010LoginAction extends GxoaCommonSupport {
 		this.loginInfo = loginInfo;
 	}
 
-	public List<State> getUserType() {
+	public List<State> getUserTypeList() {
 		
-		userType = new ArrayList<State>();
-		userType.add(new State("0", "系统管理员"));
-		userType.add(new State("1", "部门管理员"));
-		userType.add(new State("9", "普通用户"));
+		userTypeList = new ArrayList<State>();
+		userTypeList.add(new State("0", "系统管理员"));
+		userTypeList.add(new State("1", "部门管理员"));
+		userTypeList.add(new State("9", "普通用户"));
 //		userType.add(new State("0", getText("userType.0")));
 //		userType.add(new State("1", getText("userType.1")));
 //		userType.add(new State("9", getText("userType.9")));
 		
-		return userType;
+		return userTypeList;
 	}
 
 	public String getConfirmCd() {
