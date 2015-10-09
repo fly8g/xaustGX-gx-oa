@@ -32,6 +32,14 @@
         <put-attribute name="disp_css" value="/css/app001/APP0010.css" />
         <put-attribute name="body" value="/WEB-INF/jsp/app001/APP0010.jsp" />
     </definition>
+
+    <!-- 会议制定画面 -->
+    <definition name="APP0040" extends="base">
+        <put-attribute name="disp_title_key" value="APP0040.title" />
+        <put-attribute name="disp_js" value="/WEB-INF/js/app004/APP0040.js" />
+        <put-attribute name="disp_css" value="/css/app004/APP0040.css" />
+        <put-attribute name="body" value="/WEB-INF/jsp/app004/APP0040.jsp" />
+    </definition>
     <!-- =================================================================== -->
 
 </tiles-definitions>

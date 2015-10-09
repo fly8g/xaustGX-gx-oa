@@ -1,0 +1,23 @@
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+.text-muted {
+  margin: 20px 0;
+}
+.jumbotron-msg {
+  padding-top: 58px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.jumbotron-contents {
+  padding: 0px 0px;
+}
+body {
+  background-color: #eeeeee;
+}

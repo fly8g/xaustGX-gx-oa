@@ -8,7 +8,7 @@
 	<div class="form-group"></div>
 	<div class="form-group">
 		<s:label class="col-sm-1 control-label" key="APP0010.userType"/>
-		<div class="col-sm-3"><s:select name="loginInfo.userType" list="userType" listKey="stateAbbr" listValue="stateName" class="form-control"/></div>
+		<div class="col-sm-3"><s:select name="loginInfo.userType" list="userTypeList" listKey="stateAbbr" listValue="stateName" class="form-control"/></div>
 	</div>
 	<div class="form-group">
 		<s:label class="col-sm-1 control-label" key="APP0010.username"/>

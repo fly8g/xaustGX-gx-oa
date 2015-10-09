@@ -9,7 +9,7 @@ public class GxoaLoginInfo implements Serializable {
 	private String userId;
 	private String username;
 	private String password;
-	private String userTpye;
+	private String userType;
 	private String lastLoginDt;
 	private String deptCd;
 	private String email;
@@ -38,11 +38,11 @@ public class GxoaLoginInfo implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getUserTpye() {
-		return userTpye;
+	public String getUserType() {
+		return userType;
 	}
-	public void setUserTpye(String userTpye) {
-		this.userTpye = userTpye;
+	public void setUserType(String userType) {
+		this.userType = userType;
 	}
 	public String getLastLoginDt() {
 		return lastLoginDt;
