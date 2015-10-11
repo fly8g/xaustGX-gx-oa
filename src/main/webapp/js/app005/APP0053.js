@@ -92,11 +92,11 @@ $(document).ready(function() {
 //            { title: "Extn." },
 //            { title: "Start date" },
 //            { title: "Salary" }
-            { title: " " , width: "95%", "render": function ( data, type, full, meta ) {
+            { width: "95%", "render": function ( data, type, full, meta ) {
                                                        return '・<a href="#">' + data + '</a>';
                                                    }
             },
-            { title: " " , width: "5%"}
+            { width: "5%"}
         ],
         "language": {
             "lengthMenu": "每页显示 _MENU_ 条",
