@@ -28,7 +28,7 @@
     <!-- 用户登录画面 -->
     <definition name="APP0010" extends="base">
         <put-attribute name="disp_title_key" value="APP0010.title" />
-        <put-attribute name="disp_js" value="/WEB-INF/js/app001/APP0010.js" />
+        <put-attribute name="disp_js" value="/js/app001/APP0010.js" />
         <put-attribute name="disp_css" value="/css/app001/APP0010.css" />
         <put-attribute name="body" value="/WEB-INF/jsp/app001/APP0010.jsp" />
     </definition>
@@ -36,9 +36,25 @@
     <!-- 会议制定画面 -->
     <definition name="APP0040" extends="base">
         <put-attribute name="disp_title_key" value="APP0040.title" />
-        <put-attribute name="disp_js" value="/WEB-INF/js/app004/APP0040.js" />
+        <put-attribute name="disp_js" value="/js/app004/APP0040.js" />
         <put-attribute name="disp_css" value="/css/app004/APP0040.css" />
         <put-attribute name="body" value="/WEB-INF/jsp/app004/APP0040.jsp" />
+    </definition>
+
+    <!-- 新闻上传画面 -->
+    <definition name="APP0050" extends="base">
+        <put-attribute name="disp_title_key" value="APP0050.title" />
+        <put-attribute name="disp_js" value="/js/app005/APP0050.js" />
+        <put-attribute name="disp_css" value="/css/app005/APP0050.css" />
+        <put-attribute name="body" value="/WEB-INF/jsp/app005/APP0050.jsp" />
+    </definition>
+
+    <!-- 新闻浏览画面 -->
+    <definition name="APP0053" extends="base">
+        <put-attribute name="disp_title_key" value="APP0053.title" />
+        <put-attribute name="disp_js" value="/js/app005/APP0053.js" />
+        <put-attribute name="disp_css" value="/css/app005/APP0053.css" />
+        <put-attribute name="body" value="/WEB-INF/jsp/app005/APP0053.jsp" />
     </definition>
     <!-- =================================================================== -->
 

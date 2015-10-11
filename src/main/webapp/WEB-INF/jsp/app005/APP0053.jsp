@@ -3,10 +3,11 @@
 <div class="jumbotron-contents">
 <div class="container">
 <ol class="breadcrumb">
-	<li><a href="#"><s:text name="APP004.title" /></a></li>
-	<li class="active"><s:text name="APP0040.title" /></li>
+	<li><a href="#"><s:text name="APP005.title" /></a></li>
+	<li class="active"><s:text name="APP0053.title" /></li>
 </ol>
 <s:form class="form-horizontal" role="form">
+	<div class="form-group"></div>
 	<div class="form-group">
 		<s:label class="col-sm-1 control-label" key="会议室"/>
 		<div class="col-sm-5"><s:textfield name="meetingInfo.address" class="form-control" placeholder="" readonly="true" /></div>
@@ -85,7 +86,7 @@
 				<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
 			</div>
 		</div>
-		<input type="hidden" id="dtp_input1" name="meetingInfo.startDt"  />
+		<input type="hidden" id="dtp_input1" value="" />
 		<s:label class="col-sm-1 control-label" key="结束时间"/>
 		<div class="col-sm-3">
 			<div class="input-group date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input2">
@@ -94,7 +95,7 @@
 				<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
 			</div>
 		</div>
-		<input type="hidden" id="dtp_input2" name="meetingInfo.endDt" />
+		<input type="hidden" id="dtp_input2" value="" />
 	</div>
 	<div class="form-group">
 		<s:label class="col-sm-1 control-label" key="会议内容"/>
