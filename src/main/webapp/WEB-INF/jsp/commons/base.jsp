@@ -29,6 +29,8 @@
 <s:url value="/jquery/plugin/cleditor/jquery.cleditor.min.js" var="cleidtor_js" />
 <s:url value="/jquery/plugin/datetimepicker/js/bootstrap-datetimepicker.min.js" var="datetimepicker_js" />
 <s:url value="/jquery/plugin/datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" var="datetimepicker_locales_js" />
+<s:url value="/jquery/plugin/DataTables/media/js/jquery.dataTables.min.js" var="dataTables_js" />
+<s:url value="/jquery/plugin/DataTables/plugin/dataTables.bootstrap.js" var="dataTables_bootstrap_js" />
 <s:set var="disp_common_js">
 	<tiles:getAsString name="disp_common_js" ignore="true" />
 </s:set>
@@ -45,6 +47,8 @@
 <script type="text/javascript" src="${cleidtor_js}"></script>
 <script type="text/javascript" src="${datetimepicker_js}"></script>
 <script type="text/javascript" src="${datetimepicker_locales_js}"></script>
+<script type="text/javascript" src="${dataTables_js}"></script>
+<script type="text/javascript" src="${dataTables_bootstrap_js}"></script>
 <script type="text/javascript" src="${disp_common_js_url}"></script>
 <script type="text/javascript" src="${disp_js_url}"></script>
 
@@ -55,6 +59,8 @@
 <s:url value="/bootstrap/css/bootstrap.min.css" var="bootstrap_css" />
 <s:url value="/jquery/plugin/cleditor/jquery.cleditor.css" var="cleidtor_css" />
 <s:url value="/jquery/plugin/datetimepicker/css/bootstrap-datetimepicker.min.css" var="datetimepicker_css" />
+<s:url value="/jquery/plugin/DataTables/media/css/jquery.dataTables.min.css" var="dataTables_css" />
+<s:url value="/jquery/plugin/DataTables/plugin/dataTables.bootstrap.css" var="dataTables_bootstrap_css" />
 <s:set var="disp_common_css">
 	<tiles:getAsString name="disp_common_css" ignore="true" />
 </s:set>
@@ -70,6 +76,8 @@
 <link rel="stylesheet" href="${bootstrap_css}" type="text/css" />
 <link rel="stylesheet" href="${cleidtor_css}" type="text/css" />
 <link rel="stylesheet" href="${datetimepicker_css}" type="text/css" />
+<%-- <link rel="stylesheet" href="${dataTables_css}" type="text/css" /> --%>
+<link rel="stylesheet" href="${dataTables_bootstrap_css}" type="text/css" />
 <link rel="stylesheet" href="${disp_common_css_url}" type="text/css" />
 <link rel="stylesheet" href="${disp_css_url}" type="text/css" />
 

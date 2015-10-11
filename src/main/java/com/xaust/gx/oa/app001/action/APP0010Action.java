@@ -17,17 +17,17 @@ import com.xaust.gx.oa.common.model.GxoaLoginInfo;
  */
 @Action("APP0010")
 @Results({
-	@Result(name = com.opensymphony.xwork2.Action.LOGIN,
-			type = "tiles",
-			location = "APP0010"),
+//	@Result(name = com.opensymphony.xwork2.Action.LOGIN,
+//			type = "tiles",
+//			location = "APP0010"),
 	@Result(name = com.opensymphony.xwork2.Action.SUCCESS,
-			type = "chain",
+			type = "tiles",
 			location = "APP0010"),
 	@Result(name = com.opensymphony.xwork2.Action.INPUT,
 			type = "tiles",
 			location = "APP0010")
 }) 
-public class APP0010LoginAction extends GxoaCommonSupport {
+public class APP0010Action extends GxoaCommonSupport {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -37,18 +37,25 @@ public class APP0010LoginAction extends GxoaCommonSupport {
 	
 	private String confirmCd ;
 
+	public String execute() {
+		return SUCCESS;
+	}
+
 	public void validateLogin() {
 		String sesConfirmCd = (String)session.get(SESSION_KEY_CONFIRM_CD);
 		if(!StringUtils.equals(sesConfirmCd, confirmCd)) {
 			addFieldError("confirmCd", getText("E01000"));
 		}
 	}
+	
 	public String login() {
 		session.put("loginInfo", loginInfo);
 		return SUCCESS;
 	}
-	public String execute() {
-		return LOGIN;
+	
+	public String logout() {
+		session.remove("loginInfo");
+		return SUCCESS;
 	}
 
 	public GxoaLoginInfo getLoginInfo() {
