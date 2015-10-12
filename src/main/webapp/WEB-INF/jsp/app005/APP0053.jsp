@@ -9,7 +9,6 @@
 
 <s:form class="form-horizontal" role="form">
 	<div class="col-sm-12">
-		<!-- <table id="example" class="display row-border" cellspacing="0" width="100%"></table> -->
 		<table id="example" class="table" cellspacing="0" width="100%"></table>
 	</div>
 </s:form>

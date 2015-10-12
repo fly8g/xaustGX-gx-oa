@@ -104,7 +104,7 @@ $(document).ready(function() {
             "info": "当前第 _PAGE_ 页    共 _PAGES_ 页  _MAX_ 条",
             "infoEmpty": "No records available",
             "infoFiltered": "(从 _MAX_ 件结果中过滤后)",
-            "search": "搜索：",
+            "search": "<span class='glyphicon glyphicon-filter'></span> ",
             "paginate": {
                   "previous": "上一页",
                   "next": "下一页"

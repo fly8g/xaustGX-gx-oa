@@ -21,6 +21,8 @@ public class GxoaCommonSupport extends ActionSupport implements SessionAware {
 
 	public Map<String, Object> session;
 
+	public static final String NEXT_SCREEN = "next_screen";
+
 	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;

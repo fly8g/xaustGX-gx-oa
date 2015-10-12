@@ -28,7 +28,7 @@
 	</div>
 	<div class="form-group">
 		<s:label class="col-sm-1 control-label" key="内容"/>
-		<div class="col-sm-11"><s:textarea name="newsInfo.content" class="form-control" placeholder="" rows="98"/></div>
+		<div class="col-sm-11"><s:textarea name="newsInfo.content" class="form-control" placeholder=""/></div>
 	</div>
 	<div class="form-group">
 		<div class="col-sm-1 col-sm-offset-1"><s:submit method="regist" class="btn btn-primary btn-block" key="APP0050.regist" /></div>

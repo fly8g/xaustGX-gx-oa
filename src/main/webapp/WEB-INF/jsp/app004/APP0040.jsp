@@ -49,7 +49,7 @@
 	</div>
 	<div class="form-group">
 		<s:label class="col-sm-1 control-label" key="资源准备"/>
-		<div class="col-sm-5"><s:textarea name="meetingInfo.device" class="form-control" placeholder="" rows="8"/></div>
+		<div class="col-sm-5"><s:textarea name="meetingInfo.device" class="form-control" placeholder="" rows="5"/></div>
 		<div class="col-sm-1"><s:submit class="btn btn-default" key="添加资源" /></div>
 	</div>
 	<div class="form-group">

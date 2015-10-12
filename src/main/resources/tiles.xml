@@ -56,6 +56,22 @@
         <put-attribute name="disp_css" value="/css/app005/APP0053.css" />
         <put-attribute name="body" value="/WEB-INF/jsp/app005/APP0053.jsp" />
     </definition>
+
+    <!-- 我的邮箱画面 -->
+    <definition name="APP0060" extends="base">
+        <put-attribute name="disp_title_key" value="APP0060.title" />
+        <put-attribute name="disp_js" value="/js/app006/APP0060.js" />
+        <put-attribute name="disp_css" value="/css/app006/APP0060.css" />
+        <put-attribute name="body" value="/WEB-INF/jsp/app006/APP0060.jsp" />
+    </definition>
+
+    <!-- 写邮件画面 -->
+    <definition name="APP0061" extends="base">
+        <put-attribute name="disp_title_key" value="APP0061.title" />
+        <put-attribute name="disp_js" value="/js/app006/APP0061.js" />
+        <put-attribute name="disp_css" value="/css/app006/APP0061.css" />
+        <put-attribute name="body" value="/WEB-INF/jsp/app006/APP0061.jsp" />
+    </definition>
     <!-- =================================================================== -->
 
 </tiles-definitions>
