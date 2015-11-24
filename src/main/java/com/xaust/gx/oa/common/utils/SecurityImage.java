@@ -104,11 +104,11 @@ public class SecurityImage {
 			inputStream = new ByteArrayInputStream(bts);
 		} catch (ImageFormatException e) {
 			if (log.isDebugEnabled()) {
-				log.debug(e.toString());
+				log.debug(e.toString(), "");
 			}
 		} catch (IOException e) {
 			if (log.isDebugEnabled()) {
-				log.debug(e.toString());
+				log.debug(e.toString(), "");
 			}
 		}
 		return inputStream;

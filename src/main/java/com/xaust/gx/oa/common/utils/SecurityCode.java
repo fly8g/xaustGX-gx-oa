@@ -59,7 +59,7 @@ public class SecurityCode {
 			String er = String.format("调用SecurityCode.getSecurityCode(%1$s,%2$s,%3$s)出现异常，当isCanRepeat为%3$s时，传入参数%1$s不能大于%4$s",
 										len, level, isCanRepeat, n);
 			if (log.isDebugEnabled()) {
-				log.debug(er);
+				log.debug(er, "");
 			}
 			throw new RuntimeException(er);
 		}
