@@ -8,8 +8,11 @@ import org.apache.struts.edit.model.State;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.xaust.gx.oa.app001.service.UserService;
 import com.xaust.gx.oa.common.action.GxoaCommonSupport;
+import com.xaust.gx.oa.common.entity.User;
 import com.xaust.gx.oa.common.model.GxoaLoginInfo;
 
 /**
@@ -35,16 +38,27 @@ public class APP0010Action extends GxoaCommonSupport {
 	
 	private List<State> userTypeList ;
 	
-	private String confirmCd ;
+	private String confirmCd;
+
+	@Autowired
+	private UserService userService;
 
 	public String execute() {
 		return SUCCESS;
 	}
 
 	public void validateLogin() {
-		String sesConfirmCd = (String)session.get(SESSION_KEY_CONFIRM_CD);
-		if(!StringUtils.equals(sesConfirmCd, confirmCd)) {
-			addFieldError("confirmCd", getText("E01000"));
+//		String sesConfirmCd = (String)session.get(SESSION_KEY_CONFIRM_CD);
+//		if (!StringUtils.equals(sesConfirmCd, confirmCd)) {
+//			addFieldError("confirmCd", getText("E01000"));
+//		}
+//		
+		User user = userService.getUserInfo(loginInfo.getUsername());
+		if (user == null) {
+			addFieldError("loginInfo.username", getText("E01001"));
+		} else if (!user.getPassword().equals(loginInfo.getPassword())) {
+			addFieldError("loginInfo.username", getText("E01002"));
+			addFieldError("loginInfo.password", getText("E01002"));
 		}
 	}
 	

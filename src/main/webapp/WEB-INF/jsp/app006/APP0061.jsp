@@ -4,7 +4,7 @@
 <div class="container">
 <ol class="breadcrumb">
 	<li><a href="#"><s:text name="APP006.title" /></a></li>
-	<li class="active"><s:text name="APP0060.title" /></li>
+	<li class="active"><s:text name="APP0061.title" /></li>
 </ol>
 <s:form class="form-horizontal" role="form">
 <div class="col-sm-2">
@@ -23,11 +23,10 @@
 		<a href="#" class="list-group-item">联系人</a>
 		<a href="#" class="list-group-item">常用地址</a>
 	</div>
-</ul>
 </div>
 <div class="col-sm-10">
 <div class="panel panel-default">
-<div class="panel-heading">发件箱</div>
+<div class="panel-heading">普通邮件</div>
 <div class="panel-body">
 	<button class="btn btn-default btn-xs">发送</button>
 	<button class="btn btn-default btn-xs">存草稿</button>

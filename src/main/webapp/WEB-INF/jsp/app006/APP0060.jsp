@@ -22,7 +22,6 @@
 		<a href="#" class="list-group-item">联系人</a>
 		<a href="#" class="list-group-item">常用地址</a>
 	</div>
-</ul>
 </div>
 <div class="col-sm-10">
 <div class="panel panel-default">

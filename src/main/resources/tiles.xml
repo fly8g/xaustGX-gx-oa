@@ -72,6 +72,22 @@
         <put-attribute name="disp_css" value="/css/app006/APP0061.css" />
         <put-attribute name="body" value="/WEB-INF/jsp/app006/APP0061.jsp" />
     </definition>
+
+    <!-- 发文管理画面 -->
+    <definition name="APP0411" extends="base">
+        <put-attribute name="disp_title_key" value="APP0411.title" />
+        <put-attribute name="disp_js" value="/js/app041/APP0411.js" />
+        <put-attribute name="disp_css" value="/css/app041/APP0411.css" />
+        <put-attribute name="body" value="/WEB-INF/jsp/app041/APP0411.jsp" />
+    </definition>
+
+    <!-- 新增发文画面 -->
+    <definition name="APP0412" extends="base">
+        <put-attribute name="disp_title_key" value="APP0412.title" />
+        <put-attribute name="disp_js" value="/js/app041/APP0412.js" />
+        <put-attribute name="disp_css" value="/css/app041/APP0412.css" />
+        <put-attribute name="body" value="/WEB-INF/jsp/app041/APP0412.jsp" />
+    </definition>
     <!-- =================================================================== -->
 
 </tiles-definitions>
