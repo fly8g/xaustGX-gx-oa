@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry location="F:\ssm\maven_rep\com\microsoft\sqlserver\sqljdbc4\4.2\sqljdbc4-4.2.jar" />
+  <context id="context1" defaultModelType="flat" targetRuntime="MyBatis3Simple">
+    <commentGenerator>
+        <property name="suppressAllComments" value="true" />
+    </commentGenerator>
+    <jdbcConnection connectionURL="jdbc:sqlserver://localhost:1433;databaseName=gxoa" driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" password="gxoa@2015" userId="sa" />
+    <javaModelGenerator targetPackage="com.xaust.gx.oa.common.entity" targetProject="gx-oa" />
+    <sqlMapGenerator targetPackage="com.xaust.gx.oa.common.mapper" targetProject="gx-oa" />
+    <javaClientGenerator targetPackage="com.xaust.gx.oa.common.dao" targetProject="gx-oa" type="XMLMAPPER" />
+    <table tableName="gx_m_user" domainObjectName="User" mapperName="UserDao">
+    </table>
+  </context>
+</generatorConfiguration>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xaust.gx.oa.common.dao.UserDao">
+  <resultMap id="BaseResultMap" type="com.xaust.gx.oa.common.entity.User">
+    <id column="USER_ID" jdbcType="INTEGER" property="userId" />
+    <result column="USERNAME" jdbcType="NVARCHAR" property="username" />
+    <result column="PASSWORD" jdbcType="NVARCHAR" property="password" />
+    <result column="STAFF_ID" jdbcType="CHAR" property="staffId" />
+    <result column="LAST_LOGIN_DT" jdbcType="TIMESTAMP" property="lastLoginDt" />
+    <result column="REMARK" jdbcType="NVARCHAR" property="remark" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from GX_M_USER
+    where USER_ID = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.xaust.gx.oa.common.entity.User">
+    insert into GX_M_USER (USER_ID, USERNAME, PASSWORD, 
+      STAFF_ID, LAST_LOGIN_DT, REMARK
+      )
+    values (#{userId,jdbcType=INTEGER}, #{username,jdbcType=NVARCHAR}, #{password,jdbcType=NVARCHAR}, 
+      #{staffId,jdbcType=CHAR}, #{lastLoginDt,jdbcType=TIMESTAMP}, #{remark,jdbcType=NVARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.xaust.gx.oa.common.entity.User">
+    update GX_M_USER
+    set USERNAME = #{username,jdbcType=NVARCHAR},
+      PASSWORD = #{password,jdbcType=NVARCHAR},
+      STAFF_ID = #{staffId,jdbcType=CHAR},
+      LAST_LOGIN_DT = #{lastLoginDt,jdbcType=TIMESTAMP},
+      REMARK = #{remark,jdbcType=NVARCHAR}
+    where USER_ID = #{userId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select USER_ID, USERNAME, PASSWORD, STAFF_ID, LAST_LOGIN_DT, REMARK
+    from GX_M_USER
+    where USER_ID = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select USER_ID, USERNAME, PASSWORD, STAFF_ID, LAST_LOGIN_DT, REMARK
+    from GX_M_USER
+  </select>
+  <!-- add zhouxuejie start-->
+  <select id="selectByUsername" resultMap="BaseResultMap">
+    select USER_ID, USERNAME, PASSWORD, STAFF_ID, LAST_LOGIN_DT, REMARK
+    from GX_M_USER
+    where USERNAME = #{username,jdbcType=NVARCHAR}
+  </select>
+  <!-- add zhouxuejie end-->
+</mapper>
